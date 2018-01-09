@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+  Here's where my own CSS comes in 
+  screen.css - Alex Nicoara
+*/
+
+html, body {
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 2.7em;
+  font-weight: 700;
+  padding-bottom: 0.2em;
+}
+
+a, p, label {
+  display: block;
+  font-size: 1.5em;
+}
+
+li, span, #tbox {
+  font-size: 1.5em;
+}
+
+#space {
+  padding-bottom: 0.25em;
+}
+
+main {
+  padding: 1.5em 2em 2em 2em;
+}
+
+#settings {
+  padding-top: 0.5em;
+}
+
+#bresenham-pr {
+  background-color: #eeeeee;
+  margin: 0.25em 0em 0.25em 0em;
+  padding: 0.5em;
+}
+
+#bresenham-pr a, label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  padding: 0.15em;
+  color: #999999;
+}
+
+#bresenham-pr a {
+  margin-right: 0.35em;
+  padding: 0.15em 0.25em 0.15em 0.25em;
+  color: #999999;
+  float: left;
+}
+
+#triangle-pr {
+  background-color: #eeeeee;
+  margin: 0.25em 0em 0.25em 0em;
+  padding: 0.5em;
+}
+
+#triangle-pr a, label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  padding: 0.15em;
+  color: #999999;
+}
+
+#triangle-pr a {
+  margin-right: 0.35em;
+  padding: 0.15em 0.25em 0.15em 0.25em;
+  color: #999999;
+  float: left;
+}
+
+#bresenham-pr:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#bresenham-pr label:hover{
+  color: black;
+  cursor: pointer;
+}
+
+#triangle-pr:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#triangle-pr label:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#rando1, #rando2 {
+  padding: 0.25em;
+  background-color: #d6d6d6;
+  width: 6.15em;
+}
+
+#create1, #create2 {
+  padding: 0.25em;
+  padding-left: 0.5em;
+  background-color: #e09985;
+  width: 2.7em;
+}
+
+#dropdown1 {
+  padding: 0.5em;
+  background-color: #f9f9f9;
+}
+
+#dropdown2 {
+  padding: 0.5em;
+  background-color: #f9f9f9;
+}
+
+#other {
+  padding: 0.5em;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+#options1 li {
+  padding: 0.25em;
+  display: inline;
+}
+
+#rdmz1, #rdmz2, #rdmz3, #clrbtn {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  background-color: #d6d6d6;
+}
+
+#rdmz1:hover, #rdmz2:hover, #rdmz3:hover, #clrbtn:hover {
+  background-color: #e2e2e2;
+}
+
+#crte1, #crte2, #crte3 {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #e09985;
+}
+
+#crte1:hover, #crte2:hover, #crte3:hover {
+  background-color: #e9b7a9;
+}
+
+footer {
+  background-color: #999;
+  width: 100%;
+  padding: 2em;
+  bottom: 0;
+  position: fixed;
+}
+
+footer p {
+  font-size: 1.15em;
+  color: white;
+}

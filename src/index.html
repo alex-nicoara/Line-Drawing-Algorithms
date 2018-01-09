@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>HW 1: Raster Graphics</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+
+  <!-- CSS Sheet (with reset) -->
+  <link rel="stylesheet" href="screen.css" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" />
+</head>
+<body>
+  <main id="content">
+    <article id="application">
+      <h2>Assignment #1 Program by Alexander Nicoara</h2>
+      <p>Welcome! In this application, you can draw lines (using the Bresenham algorithm) and 
+         triangles using the scanline method. Click the headers to enter the coordinates and fill color 
+         of the object you desire to create. You can also randomly generate either lines or triangles by 
+         clicking the randomize button. To pause the animation, click the pause button.
+      </p>
+      <div id="settings">
+        <div id="bresenham-pr">
+          <a class="add-btn" id="trigger1">&#9660;</a>
+          <label>Create Line using Bresenham Algorithm</label>
+        </div>
+        <div id="dropdown1" style="display:none;">
+          <span>First Point (X,Y):</span>
+          <input id="tbox1-x1" type="text" name="br-x1" size="3" width="10" value="15" maxlength="3">
+          <input id="tbox1-y1" type="text" name="br-y1" size="3" width="10" value="115" maxlength="3">
+          <div id="space"></div>
+          <span>Second Point (X,Y):</span>
+          <input id="tbox1-x2" type="text" name="br-x2" size="3" width="10" value="200" maxlength="3">
+          <input id="tbox1-y2" type="text" name="br-y2" size="3" width="10" value="170" maxlength="3"> 
+          <div id="space"></div>
+          <span>Color (RGB):</span>
+          <input id="tbox1-r1" type="text" name="br-rg1" size="3" width="10" value="00" maxlength="3">
+          <input id="tbox1-r2" type="text" name="br-rg2" size="3" width="10" value="00" maxlength="3">
+          <input id="tbox1-r3" type="text" name="br-rg3" size="3" width="10" value="00" maxlength="3">
+          <div id="space"></div>
+          <div style="padding-bottom:1em;"></div>
+          <ul id="options1">
+            <li id="rdmz1">Randomize Input</li>
+            <li id="crte1">Create</li>
+          </ul>
+          <div style="padding-bottom:0.5em;"></div>
+        </div>
+
+        <div id="triangle-pr">
+          <a class="add-btn" id="trigger2">&#9660;</a>
+          <label>Create Triangle using Scanline Method</label>
+        </div>
+        <div id="dropdown2" style="display:none;">
+          <span>First Point (X,Y):</span>
+          <input id="tbox2-x1" type="text" name="tr-x1" size="3" width="10" value="5" maxlength="3">
+          <input id="tbox2-y1" type="text" name="tr-y1" size="3" width="10" value="5" maxlength="3">
+          <div id="space"></div>
+          <span>Second Point (X,Y):</span>
+          <input id="tbox2-x2" type="text" name="tr-x2" size="3" width="10" value="30" maxlength="3">
+          <input id="tbox2-y2" type="text" name="tr-y2" size="3" width="10" value="30" maxlength="3">
+          <div id="space"></div>
+          <span>Third Point (X,Y):</span>
+          <input id="tbox2-x3" type="text" name="tr-x3" size="3" width="10" value="65" maxlength="3">
+          <input id="tbox2-y3" type="text" name="tr-y3" size="3" width="10" value="5" maxlength="3"> 
+          <div id="space"></div>
+          <span>Color (RGB):</span>
+          <input id="tbox2-r1" type="text" name="tr-rg1" size="3" width="10" value="00" maxlength="3">
+          <input id="tbox2-r2" type="text" name="tr-rg2" size="3" width="10" value="00" maxlength="3">
+          <input id="tbox2-r3" type="text" name="tr-rg3" size="3" width="10" value="00" maxlength="3">
+          <input id="tbox2-randcolor" type="checkbox"> Check to randomize color for scan lines
+          <div id="space"></div>
+          <div style="padding-bottom:1em;"></div>
+          <ul id="options1">
+            <li id="rdmz2">Randomize Input</li>
+            <li id="crte2">Create</li>
+          </ul>
+          <div style="padding-bottom:0.5em;"></div>
+        </div>
+
+        <div style="padding-bottom:1em;"></div>
+        <canvas id="myCanvas" width="700" height="350"
+                style="border:1px solid #000000;">
+        </canvas> 
+
+        <div id="other">
+          <p>Generate random lines/triangles:</p>
+          <div style="padding-bottom:1em;"></div>
+          <ul id="options1">
+            <li id="clrbtn">Clear Canvas</li>
+            <li id="rdmz3">Generate Random Animation</li>
+            <li id="crte3">Pause Animation</li>
+          </ul>
+          <div style="padding-bottom:1em;"></div>
+        </div>
+      </div>
+      <div style="padding-bottom:4em;"></div>
+    </article>
+  </main>
+
+  <footer id="footer">
+    <p>2017 &copy; Created by Alex Nicoara</p>
+  </footer>
+
+  <!-- JS (JQuery) & Other JS files -->
+  <script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="intr.js"></script>
+</body>
+</html>
